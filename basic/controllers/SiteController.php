@@ -60,7 +60,7 @@ class SiteController extends Controller
      * @return string
      */
     public function actionIndex()
-    {
+    {        
         return $this->render('index');
     }
 
@@ -122,5 +122,10 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    public function actionTest() {
+        //$this->layout = 'blank';
+        //return $this->renderJSON( array('test') );        
     }
 }
